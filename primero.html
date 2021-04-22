@@ -11,6 +11,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/primer.js"></script>
 </head>
 <body>
   
@@ -23,17 +24,17 @@
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="#">Home</a>
+              <!-- <a class="nav-link" href="#">Home</a> -->
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Proyectos</a>
+              <a class="nav-link" href="#" id="experiencia" onclick="myfunction1()">Proyectos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contacto</a>
+              <a class="nav-link" href="#" id="contacto" onclick="myfunction2()">Contacto</a>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
                 <a class="nav-link" href="#">Idioma/Lenguaje</a>
-              </li>     
+              </li>      -->
           </ul>
         </div>
         </div>  
@@ -43,10 +44,10 @@
           <div class="col-sm-4">
             <img src="img/foto.jpg" alt="foto" class="img-thumbnail">
             <h3><u>Breve descripción:</u></h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores fugiat laborum accusamus porro adipisci sequi ex nihil, explicabo, vero tempore, et itaque doloremque alias accusantium delectus quo placeat obcaecati possimus.</p>
+            <p>Cuento con tres años de experiencia en el sector tecnologico, desarrollando sistemas informáticos en plataformas webs.</p>
 
             <h3><u>Aptitudes</u></h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium facilis odit, rerum iusto eius adipisci incidunt nam eaque corporis ea sapiente ut delectus dolore fugit veniam aliquid sint magni saepe.</p>
+            <p>Gran disciplina y adaptabilidad a cambios, vital para afrontar nuevos desafíos.</p>
             
             
             <hr class="d-sm-none">
@@ -77,7 +78,7 @@
   <hr>
   </div>
   <div class="container">
-    <h3 class="text-center">Experiencia Laboral</h3>
+    <h3 class="text-center" id="cuadroExperiencia">Experiencia Laboral</h3>
     <br>
     <!-- Nav tabs -->
     <ul class="nav nav-tabs" role="tablist">
@@ -147,14 +148,14 @@
 
     <div class="jumbotron text-center">
   <section>
-    <h2>Contacto</h2>
+    <h2 id="cuadroContacto">Contacto</h2>
 
-    <form action="/action_page.php">
+    <form>
     <label for="correo">Correo Electrónico:</label><br>
     <input type="" id="correo" name="correo" value=""><br>
     <label for="mensaje">Mensaje:</label><br>
     <input type="text" id="mensaje" name="mensaje" value=""><br><br>
-    <input type="submit" value="Submit">
+    <input type="submit" value="Enviar" onclick="enviarMensaje()">
     </form> 
   </section>
 </div>
@@ -167,10 +168,6 @@
       <address>Telefono +54 3834655556</address>
   </div>
 </footer>
-
-  
- 
-    
 
 </body>
 </html>
